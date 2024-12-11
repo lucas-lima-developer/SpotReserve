@@ -1,24 +1,22 @@
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Header from "@/components/Header/Header";
+import HomeFilter from "@/components/Home/FilterHome";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div>
-      <header className="flex flex-col md:flex-row items-center justify-between px-5 py-6 mb-20">
-        <div className="flex items-center gap-2">
-          <span className="text-3xl md:mb-0 mb-6 font-bold text-gray-800">Spot Reserve</span>
-        </div>
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <span className="text-gray-600 text-lg font-medium">Anuncie aqui seu espaço</span>
-          <button className="bg-blue-500 text-white text-lg px-4 py-2 rounded-full hover:bg-blue-600 transition w-full sm:w-auto">
-            Entrar
-          </button>
-        </div>
-      </header>
       <main>
+        <div className="flex items-center justify-center">
+          <HomeFilter />
+        </div>
+        
         <div className="flex items-center justify-center">
           <form className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-6 p-6 rounded-2xl mb-10">
             <div className="flex flex-col flex-1 min-w-[180px]">
-              <label htmlFor="onde" className="text-xs text-gray-600 font-medium hidden">
+              <label
+                htmlFor="onde"
+                className="text-xs text-gray-600 font-medium hidden"
+              >
                 Onde
               </label>
               <input
@@ -29,7 +27,10 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col flex-1 min-w-[180px]">
-              <label htmlFor="data" className="text-xs text-gray-600 font-medium hidden">
+              <label
+                htmlFor="data"
+                className="text-xs text-gray-600 font-medium hidden"
+              >
                 Data
               </label>
               <input
@@ -39,7 +40,10 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col flex-1 min-w-[180px]">
-              <label htmlFor="quantidade" className="text-xs text-gray-600 font-medium hidden">
+              <label
+                htmlFor="quantidade"
+                className="text-xs text-gray-600 font-medium hidden"
+              >
                 Quantidade de Pessoas
               </label>
               <input
@@ -72,12 +76,16 @@ export default function Home() {
               />
               <div className="p-4">
                 <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-bold text-gray-800">Espaço Moderno</h3>
+                  <h3 className="text-lg font-bold text-gray-800">
+                    Espaço Moderno
+                  </h3>
                   <span className="bg-blue-500 text-white text-xs font-medium px-3 py-1 rounded-full">
                     Nota: 4.5
                   </span>
                 </div>
-                <p className="text-sm text-gray-600">Endereço: Rua Exemplo, 123</p>
+                <p className="text-sm text-gray-600">
+                  Endereço: Rua Exemplo, 123
+                </p>
                 <p className="text-sm text-gray-600">Tamanho: 100m²</p>
                 <p className="text-sm text-gray-600">Preço: R$ 500,00</p>
               </div>
@@ -88,14 +96,18 @@ export default function Home() {
       <footer className="bg-gray-800 text-white py-6 mt-12">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
           {/* Logo ou Nome */}
-          <div className="text-lg font-bold">
-            Spot Reserve
-          </div>
+          <div className="text-lg font-bold">Spot Reserve</div>
           {/* Links de Navegação */}
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white transition">Sobre</a>
-            <a href="#" className="text-gray-400 hover:text-white transition">Termos de Uso</a>
-            <a href="#" className="text-gray-400 hover:text-white transition">Política de Privacidade</a>
+            <a href="#" className="text-gray-400 hover:text-white transition">
+              Sobre
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transition">
+              Termos de Uso
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transition">
+              Política de Privacidade
+            </a>
           </div>
           {/* Redes Sociais */}
           <div className="flex gap-4 mt-4 md:mt-0">
