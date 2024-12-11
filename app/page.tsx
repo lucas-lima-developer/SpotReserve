@@ -9,59 +9,6 @@ export default function Home() {
         <div className="flex items-center justify-center">
           <HomeFilter />
         </div>
-        
-        <div className="flex items-center justify-center">
-          <form className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-6 p-6 rounded-2xl mb-10">
-            <div className="flex flex-col flex-1 min-w-[180px]">
-              <label
-                htmlFor="onde"
-                className="text-xs text-gray-600 font-medium hidden"
-              >
-                Onde
-              </label>
-              <input
-                type="text"
-                id="onde"
-                placeholder="Onde"
-                className="w-full px-6 py-3 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div className="flex flex-col flex-1 min-w-[180px]">
-              <label
-                htmlFor="data"
-                className="text-xs text-gray-600 font-medium hidden"
-              >
-                Data
-              </label>
-              <input
-                type="date"
-                id="data"
-                className="w-full px-6 py-3 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div className="flex flex-col flex-1 min-w-[180px]">
-              <label
-                htmlFor="quantidade"
-                className="text-xs text-gray-600 font-medium hidden"
-              >
-                Quantidade de Pessoas
-              </label>
-              <input
-                type="number"
-                id="quantidade"
-                placeholder="Qtd Pessoas"
-                min="1"
-                className="w-full px-6 py-3 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <button
-              type="submit"
-              className="bg-blue-500 text-white text-sm font-medium px-8 py-3 rounded-full hover:bg-blue-600 transition flex-shrink-0 w-full lg:w-auto"
-            >
-              Buscar
-            </button>
-          </form>
-        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-12">
           {/* Card example */}
           {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
